@@ -1,11 +1,12 @@
 .card {
-    width: 260px;
+    width: 100%;
     height: 85px;
     border-radius: 4px;
     background-color: $indigo;
     position: relative;
     margin-top: 5px;
-    min-width: 218px;
+    max-width: 260px;
+    transition: 0.2s;
 
     &:not(:last-child) {
         margin-right: 5px;
@@ -19,6 +20,11 @@
         margin-right: 0px !important;
     }
 
+    @media (max-width: 768px) {
+        // width: 100% !important;
+        max-width: none;
+    }
+
     .link {
         display: block;
         height: 100%;
@@ -29,7 +35,7 @@
         }
     }
 
-    .card_counter {
+    .card-counter {
         padding: 20px 15px;
     }
 
@@ -63,6 +69,7 @@
     border-left: solid 4px $indigo;
     position: relative;
     min-height: 130px;
+    transition: 0.2s;
 
     &:not(:last-child) {
         margin-bottom: 10px;
@@ -70,18 +77,22 @@
 
     padding: 15px 25px;
 
-    .row_menu {
+    &:hover {
+        box-shadow: 0 0 8px rgba(33, 33, 33, 0.2);
+    }
+
+    .row-menu {
         position: absolute;
         top: 10px;
         right: 9px;
         padding: 10px;
         cursor: pointer;
 
-        &:hover .row_menu-list {
-            display: block;
+        &:hover .row-menu__list {
+            // display: block;
         }
 
-        &:hover .row_menu-icon span {
+        &:hover .row-menu__icon span {
             background-color: $indigo;
         }
 
@@ -98,7 +109,7 @@
             }
         }
 
-        .row_menu-list {
+        .row-menu__list {
             position: absolute;
             padding: 15px 20px;
             border: solid 1px #e8e8e8;
@@ -108,6 +119,7 @@
             top: 44px;
             z-index: 100;
             display: none;
+            transition: all 0.5s linear;
 
             &:hover {
                 display: block;
@@ -140,7 +152,7 @@
         }
     }
 
-    .row_status-bar {
+    .row-status__bar {
         position: absolute;
         bottom: 15px;
         right: 25px;
@@ -158,7 +170,7 @@
             }
         }
 
-        .row_status-bar_status {
+        .row-status__bar_status {
             font-size: 13px;
             color: $white;
             padding: 5px 10px;
@@ -173,14 +185,14 @@
                 margin-right: 5px;
             }
 
-            &.orange {
+            &.row-status__bar_status--orange {
                 span {
                 }
             }
         }
     }
 
-    .row_tech {
+    .row-tech {
         position: absolute;
         bottom: 15px;
         display: flex;
@@ -197,7 +209,7 @@
             position: static;
         }
 
-        .carma {
+        .row-tech__carma {
             margin-right: 10px;
             display: flex;
             align-items: center;
@@ -219,7 +231,7 @@
             &:before {
             }
 
-            &.gold {
+            &.row-tech__carma--gold {
                 color: $yellow;
                 font-weight: 700;
 
@@ -239,7 +251,7 @@
             }
         }
 
-        .review {
+        .row-tech__review {
             @media (max-width: 414px) {
                 font-size: 12px;
                 margin: 5px 0;
@@ -263,12 +275,12 @@
         align-items: center;
         margin-bottom: 10px;
 
-        .row_header-h3 {
+        .row-header__h3 {
             font-size: 16px;
             margin-right: 10px;
         }
 
-        .row_header-list li {
+        .row-header__list li {
             display: inline-block;
             color: $grey;
 
@@ -289,7 +301,7 @@
         margin-bottom: 40px;
         margin-top: 10px;
 
-        .row_stat-group_stat-list {
+        .row-stat-group__stat-list {
             .stat {
                 display: inline-block;
                 border-radius: 4px;
@@ -305,7 +317,7 @@
                     }
                 }
 
-                &.create {
+                &.row-stat-group__stat--create {
                     svg {
                         width: 12px;
                         height: 16.5px;
@@ -344,13 +356,13 @@
     }
 }
 
-.inactive {
+.bottom-screen__row--inactive {
     color: $grey;
     border-left: 4px solid $grey;
     min-height: 70px;
 }
 
-.half-active {
+.bottom-screen__row--half-active {
     // color: $grey;
     border-left: 4px solid $grey;
 }

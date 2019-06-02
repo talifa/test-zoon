@@ -5,172 +5,172 @@ block variables
 	- var pageClass = 'index-page'
 
 block content
-	div.top_screen
-		.top_screen-card.card
-			a.card_counter-link.link(href='#')
-				div.card_counter
-					p.card_counter-counter.counter 165
-					p.card_counter-desc.desc отзывов
+	div.top-screen
+		.top-screen__card.card
+			a.card-counter__link.link(href='#')
+				div.card-counter
+					p.card-counter__counter.counter 165
+					p.card-counter__desc.desc отзывов
 				.card_icon
 					+icon('otziv')
-		.top_screen-card.card
-			a.card_counter-link.link(href='#')
-				div.card_counter
-					p.card_counter-counter.counter 21 
-					p.card_counter-desc.desc неотвеченный отзыв
+		.top-screen__card.card
+			a.card-counter__link.link(href='#')
+				div.card-counter
+					p.card-counter__counter.counter 21 
+					p.card-counter__desc.desc неотвеченный отзыв
 				.card_icon
 					+icon('notreply')
-		.top_screen-card.card
-			a.card_counter-link.link(href='#')
-				div.card_counter
-					p.card_counter-counter.counter 50
-					p.card_counter-desc.desc обновлений
+		.top-screen__card.card
+			a.card-counter__link.link(href='#')
+				div.card-counter
+					p.card-counter__counter.counter 50
+					p.card-counter__desc.desc обновлений
 				.card_icon
 					+icon('refresh')
-		.top_screen-card.card
-			a.card_counter-link.link(href='#')
-				div.card_counter
-					p.card_counter-counter.counter 4.5
-					p.card_counter-desc.desc средний рейтинг
+		.top-screen__card.card
+			a.card-counter__link.link(href='#')
+				div.card-counter
+					p.card-counter__counter.counter 4.5
+					p.card-counter__desc.desc средний рейтинг
 				.card_icon
 					+icon('star')
-	div.bottom_screen
-		.bottom_screen-row.row
-			.row_menu.menu
-				.row_menu-icon
+	div.bottom-screen
+		.bottom-screen__row.row
+			.row-menu.menu
+				.row-menu__icon
 					span
 					span
 					span
-				.row_menu-list
+				.row-menu__list
 					ul
 						li 
 							a.link(href='#') Включить
 			.row_header.header
-				h3.row_header-h3 Google
-				ul.row_header-list
+				h3.row-header__h3 Google
+				ul.row-header__list
 					li  все 30 заведений настроены
 					li  все 30 заведений 
 			div.row_stat-group.stat-group
-				ul.row_stat-group_stat-list.list
-					li.row_stat-group_stat.stat.active
+				ul.row-stat-group__stat-list.list
+					li.row-stat-group__stat.stat.active
 						+icon('check')
 						span Синхронизировано
-					li.row_stat-group_stat.stat
+					li.row-stat-group__stat.stat
 						+icon('check')
 						span Инфа
-					li.row_stat-group_stat.stat
+					li.row-stat-group__stat.stat
 						+icon('check')
 						span Прайс
-					li.row_stat-group_stat.stat
+					li.row-stat-group__stat.stat
 						+icon('check')
 						span Фото
-					li.row_stat-group_stat.stat
+					li.row-stat-group__stat.stat
 						+icon('check')
 						span Акции												
-			.row_tech.tech
-				.carma.gold
+			.row-tech.tech
+				.row-tech__carma.row-tech__carma--gold
 					+icon('star') 
 					span 4,5 из 5
-				.review  198 отзывов, 15 неотвеченных
-			.row_status-bar 
-				a.row_status-bar_link.link(href='#') 2 обновления
-		.bottom_screen-row.row
-			.row_menu.menu
-				.row_menu-icon
+				.row-tech__review  198 отзывов, 15 неотвеченных
+			.row-status__bar 
+				a.row-status__bar_link.link(href='#') 2 обновления
+		.bottom-screen__row.row
+			.row-menu.menu
+				.row-menu__icon
 					span
 					span
 					span
-				.row_menu-list
+				.row-menu__list
 					ul
 						li 
 							a.link(href='#') Включить
 			.row_header.header
-				h3.row_header-h3 Flado
-				ul.row_header-list
+				h3.row-header__h3 Flado
+				ul.row-header__list
 					li  все 30 заведений настроены
 					li  все 30 заведений 
 			div.row_stat-group.stat-group
-				ul.row_stat-group_stat-list.list
-					li.row_stat-group_stat.stat.create
+				ul.row-stat-group__stat-list.list
+					li.row-stat-group__stat.stat.row-stat-group__stat--create
 						+icon('superrefresh')
 						span Создаем 
 							span.number 3 
 							| страницы
-					li.row_stat-group_stat.stat
+					li.row-stat-group__stat.stat
 						+icon('check')
 						span Инфа
-					li.row_stat-group_stat.stat
+					li.row-stat-group__stat.stat
 						+icon('check')
 						span Прайс
-					li.row_stat-group_stat.stat
+					li.row-stat-group__stat.stat
 						+icon('check')
 						span Фото
-					li.row_stat-group_stat.stat
+					li.row-stat-group__stat.stat
 						+icon('check')
 						span Акции					
-			.row_tech.tech
-				.carma 
+			.row-tech.tech
+				.row-tech__carma 
 					+icon('star') 
 					span Портал без рейтинга
-				.review  198 отзывов, 15 неотвеченных
-			.row_status-bar 
-				div.row_status-bar_status.status.orange 
+				.row-tech__review  198 отзывов, 15 неотвеченных
+			.row-status__bar 
+				div.row-status__bar_status.status.row-status__bar_status--orange 
 					+icon('ring')
 					span Требует действия
 			
-		.bottom_screen-row.row.half-active
-			.row_menu.menu 
-				.row_menu-icon
+		.bottom-screen__row.row.bottom-screen__row--half-active
+			.row-menu.menu 
+				.row-menu__icon
 					span
 					span
 					span
-				.row_menu-list
+				.row-menu__list
 					ul
 						li 
 							a.link(href='#') Включить
 			.row_header.header
-				h3.row_header-h3 2Gis
-				//- ul.row_header-list
+				h3.row-header__h3 2Gis
+				//- ul.row-header__list
 					li  все 30 заведений настроены
 					li  все 30 заведений 
 			div.row_stat-group.stat-group
-				ul.row_stat-group_stat-list.list
-					li.row_stat-group_stat.stat.create
+				ul.row-stat-group__stat-list.list
+					li.row-stat-group__stat.stat.row-stat-group__stat--create
 						+icon('superrefresh')
 						span Создаем 
 							span.number 3 
 							| страницы
-			.row_tech.tech
-				.carma Поиск заведений: 
+			.row-tech.tech
+				.row-tech__carma Поиск заведений: 
 					span.search-counter 
 						span.find 15 
 						| из 
 						span.from 78
-				//- .review  198 отзывов, 15 неотвеченных
-			.row_status-bar 
-				div.row_status-bar_status.status.orange 
+				//- .row-tech__review  198 отзывов, 15 неотвеченных
+			.row-status__bar 
+				div.row-status__bar_status.status.row-status__bar_status--orange 
 					+icon('ring')
 					span Требует действия
-		.bottom_screen-row.row.inactive
-			.row_menu.menu 
-				.row_menu-icon
+		.bottom-screen__row.row.bottom-screen__row--inactive
+			.row-menu.menu 
+				.row-menu__icon
 					span
 					span
 					span
-				.row_menu-list
+				.row-menu__list
 					ul
 						li
 							a.link(href='#') Включить
 			.row_header.header
-				h3.row_header-h3 Yell
-				//- ul.row_header-list
+				h3.row-header__h3 Yell
+				//- ul.row-header__list
 					li  все 30 заведений настроены
 					li  все 30 заведений 
 			//- div.row_stat-group.stat-group
-			.row_tech.tech
-				.carma Площадка отключена 
+			.row-tech.tech
+				.row-tech__carma Площадка отключена 
 					//- span.search-counter  15 из 78
-				//- .review  198 отзывов, 15 неотвеченных
-			.row_status-bar 
-				//- a.row_status-bar_link.link(href='#') 2 обновления
+				//- .row-tech__review  198 отзывов, 15 неотвеченных
+			.row-status__bar 
+				//- a.row-status__bar_link.link(href='#') 2 обновления
 	
